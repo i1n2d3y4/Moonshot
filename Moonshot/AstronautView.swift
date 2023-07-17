@@ -8,11 +8,24 @@
 import SwiftUI
 
 struct AstronautView: View {
+    let astronaut: Astronaut
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack {
+                Image(astronaut.id)
+                    .resizable()
+                    .scaledToFit()
+                Text(astronaut.description)
+                    .padding()
+            }
+        }
+        .navigationTitle(astronaut.name)
+        .background(.darkBackground)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
-#Preview {
-    AstronautView()
-}
+//#Preview {
+//    AstronautView()
+//}

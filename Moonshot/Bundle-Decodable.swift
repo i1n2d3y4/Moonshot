@@ -18,6 +18,11 @@ extension Bundle {
         }
         
         let decoder = JSONDecoder()
+        //we want our dates to be formatted according to the below date format when being converted from JSON
+        let formatter = DateFormatter()
+        formatter.dateFormat = "y-MM-dd"
+        
+        decoder.dateDecodingStrategy = .formatted(formatter)
         
         guard let loaded = try? decoder.decode(T.self, from: data) else {
             fatalError("Failed to decode \(file) from bundle.")

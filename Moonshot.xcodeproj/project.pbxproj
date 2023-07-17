@@ -16,6 +16,9 @@
 		4E5B8D6D2A6032DC00E6C484 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B8D6C2A6032DC00E6C484 /* Astronaut.swift */; };
 		4E5B8D6F2A60339200E6C484 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5B8D6E2A60339200E6C484 /* Bundle-Decodable.swift */; };
 		4E8CCC3C2A62B2EA00A86F8E /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CCC3B2A62B2EA00A86F8E /* Missions.swift */; };
+		4E8CCC3E2A62BEAA00A86F8E /* Color-Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CCC3D2A62BEAA00A86F8E /* Color-Theme.swift */; };
+		4E8CCC402A63F36100A86F8E /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CCC3F2A63F36100A86F8E /* MissionView.swift */; };
+		4E8CCC422A64008700A86F8E /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8CCC412A64008700A86F8E /* AstronautView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		4E5B8D6C2A6032DC00E6C484 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
 		4E5B8D6E2A60339200E6C484 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		4E8CCC3B2A62B2EA00A86F8E /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Missions.swift; path = ../Missions.swift; sourceTree = "<group>"; };
+		4E8CCC3D2A62BEAA00A86F8E /* Color-Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color-Theme.swift"; sourceTree = "<group>"; };
+		4E8CCC3F2A63F36100A86F8E /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		4E8CCC412A64008700A86F8E /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,9 @@
 				4E8CCC3B2A62B2EA00A86F8E /* Missions.swift */,
 				4E5B8D6E2A60339200E6C484 /* Bundle-Decodable.swift */,
 				4E5B8D5C2A5EAD5E00E6C484 /* ContentView.swift */,
+				4E8CCC3F2A63F36100A86F8E /* MissionView.swift */,
+				4E8CCC412A64008700A86F8E /* AstronautView.swift */,
+				4E8CCC3D2A62BEAA00A86F8E /* Color-Theme.swift */,
 				4E5B8D5E2A5EAD5F00E6C484 /* Assets.xcassets */,
 				4E5B8D692A6030BD00E6C484 /* astronauts.json */,
 				4E5B8D682A6030BC00E6C484 /* missions.json */,
@@ -110,7 +119,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					4E5B8D562A5EAD5E00E6C484 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -154,7 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E8CCC402A63F36100A86F8E /* MissionView.swift in Sources */,
 				4E5B8D6D2A6032DC00E6C484 /* Astronaut.swift in Sources */,
+				4E8CCC422A64008700A86F8E /* AstronautView.swift in Sources */,
+				4E8CCC3E2A62BEAA00A86F8E /* Color-Theme.swift in Sources */,
 				4E5B8D5D2A5EAD5E00E6C484 /* ContentView.swift in Sources */,
 				4E8CCC3C2A62B2EA00A86F8E /* Missions.swift in Sources */,
 				4E5B8D5B2A5EAD5E00E6C484 /* MoonshotApp.swift in Sources */,
@@ -169,6 +181,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -201,6 +214,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -229,6 +243,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -261,6 +276,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
